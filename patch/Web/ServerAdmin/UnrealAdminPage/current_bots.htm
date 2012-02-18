@@ -1,0 +1,35 @@
+<!-- #include file="header.inc" -->
+<form method="post" action="<%PostAction%>">
+<table>
+<tr>
+	<th class="full" colspan="2">Add/Remove by Quantity</th>
+</tr>
+<tr>
+	<td nowrap><select name="botaction" size="1"><option>Add<option>Remove</select>&nbsp;<input class="textbox" type="text" name="addnum" value="1" size="3" maxlength="3"> Bot(s) to the current game</td>
+	<td align="right"><input class="button" type="submit" name="addbotnum" value="Accept"><p></td>
+</tr>
+</table>
+
+<table>
+<colgroup>
+	<col width="1*">
+	<col width="1*">
+</colgroup>
+<tr>
+	<th class="full" colspan="2">Add/Remove by Selecting</th>
+</tr>
+<tr>
+	<td>(only available once game has started)</td>
+	<td class="aright"><input class="button" type="submit" name="selectbots" value="Accept"<%DisabledBots%>></td>
+</tr>
+<tr>
+	<td>
+	<%LeftBotTable%>
+	</td>
+	<td>
+	<%RightBotTable%>
+	</td>
+</tr>
+</table>
+</form>
+<!-- #include file="footer.inc" -->

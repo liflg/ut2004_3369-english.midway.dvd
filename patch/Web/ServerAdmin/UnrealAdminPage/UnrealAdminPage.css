@@ -1,0 +1,168 @@
+BODY {
+	background-color: white;
+}
+
+BODY, TD, FONT {
+	font-family: sans-serif;
+	color: black;
+}
+
+TABLE {
+	width: 100%;
+	border-spacing: 0px;
+	empty-cells: show;
+}
+
+TABLE.nofull {
+	width: auto;
+}
+
+TD {
+	padding: 2px;
+	vertical-align: top;
+}
+
+TH {
+	font-weight: bold;
+	font-size: smaller;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: #9CC3E7;
+	text-align: left;
+}
+
+TH.left {
+	border-left: 1px solid black;
+}
+
+TH.right {
+	border-right: 1px solid black;
+}
+
+TH.full {
+	border: 1px solid black;
+}
+
+FORM {
+	margin: 0px;
+	padding: 0px;
+}
+
+A {
+	color: black;
+}
+
+TD.menubutton {
+	vertical-align: bottom;
+	text-align: right;
+	width: 1px;
+	padding: 0px;
+}
+
+TABLE.header {
+	background-color: #9CC3E7;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+TD.header_left {
+	font-size: smaller;
+	padding-left: 5px;
+	vertical-align: middle;
+}
+
+TD.header_mid {
+	font-size: smaller;
+	text-align: center;
+	vertical-align: middle;
+}
+
+TD.header_right {
+	font-size: smaller;
+	text-align: right;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+
+TD.spacer_blue {
+	background-color: #9CC3E7;
+	height: 3px;
+}
+
+TABLE.menu {
+	background-color: #eaeaea;
+	height: 100%;
+}
+
+TD.menuheader {
+	background-color: #9CC3E7;
+	border: 1px solid black;
+	font-weight: bold;
+	font-size: smaller;
+}
+
+TD.sidemenu {
+	font-size: smaller;
+}
+
+TD.menuprefooter {
+	height: 5px;
+}
+
+TD.menuspacer {
+	height: 100%;
+}
+
+TD.menufooter {
+	background-color: #9CC3E7;
+	border-bottom: 1px solid black;
+	height: 5px;
+}
+
+TABLE.sectionheader {
+	border: 1px solid #9CC3E7;
+	background-color: #eaeaea;
+	border-spacing: 3px;
+}
+
+DIV.footer {
+	font-size: xx-small;
+	color: gray;
+	text-align: center;
+}
+
+TD.aright {
+	text-align: right;
+}
+
+DIV.console {
+	width: 100%;
+	height: 100%;
+	vertical-align: bottom;
+}
+
+INPUT.consoleinput {
+	width: 80%;
+	padding-left: 2px;
+	margin-right: 2px;
+}
+
+INPUT.consolebtn {
+	width: 10%;
+}
+
+TR.highlight {
+	background-color: #eaeaea;
+}
+
+INPUT {
+	background-color: #d0d0d0;
+}
+
+SELECT {
+	background-color: #d0d0d0;
+}
+
+A.footer {
+	color: gray;
+}

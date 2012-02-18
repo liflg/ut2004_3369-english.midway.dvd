@@ -1,0 +1,265 @@
+/*
+ *    ut2k3stats.css   6/6/2002 5:55PM
+ *   ----------------
+ *   Control the look of the ut2k3stats output pages with this style sheet file.
+ */
+
+/* Design by Walter |2| Costinak <2@2design.org>
+
+Category	Color description	RGB		Use
+--------	-----------------	---		---
+
+Backgrounds:	dark blue		#243954		main background color for all pages
+		lighter blue/grey	#58677C     	table title bg and table headers bg
+                grey			#6C6C6C		table info text, search strip background
+                black			#000000		table default background
+                dark grey		#474747		table mark alternating line of data
+
+Text colors:	white			#FFFFFF		main text color
+		light blue		#CBE1FF		table header color
+                orange/yellow		#FFCC66		link color
+
+Color		light grey		#CCCCCC
+
+Page width 		760
+Content Width		700		table headers, in page gfx
+Left/Right Margin       30/30
+Between top boxes       20
+
+Font sizes:		Arial Size 4	14pt		Titels in top of page, page name
+			Arial Size 3	12pt		Table Title (bold, white)
+					10pt		Normal text
+					8pt		Small Text
+
+Pixel Infos:
+------------
+Transparent gif:	151 x 99		Subpage nice middle pic
+
+
+Table Title/Text:
+-----------------
+Table Title:		172 x 54		at least; dynamic, bg blue/grey
+Table Text:		700-172 x 54		cellpadding 8-10, cellspacing = 0
+
+Quick reference box 	14			text offset top/left
+Intro text box		16			text offset top/left
+
+
+
+
+
+*/
+
+/*---Links & Mouse-Overs---*/
+A:link		{color: #FFCC66; text-decoration: none}}
+A:visited	{color: #FFCC66; text-decoration: none}}
+A:active	{color: #FFCC66; text-decoration: underline}}
+A:hover		{color: #FFFFFF; text-decoration: underline}}
+
+
+/*---Span classes - Text---*/
+
+/*Standard info text*/
+span.text	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt; color:#FFFFFF; }
+
+/*Small font quick links, tables small text*/
+span.small	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size: 8pt; color:#FFFFFF; }
+
+/*Mark text in blue*/
+span.blue	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; color:#CBE1FF; }
+span.orange	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; color:#FFCC66; }	/*###only for tests!*/
+
+
+/*Top Navigation - page_head.php*/
+span.navigation	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt; }
+
+/*Location - page_head.php*/
+span.location	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt; }
+
+/*Table title text (or use td.ttitle)*/
+span.ttitle	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:12pt; color:#FFFFFF; font-weight:bold; }
+
+/*Page info title text - quick reference box table_quick.inc.*/
+span.ptitle	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:14pt; color:#FFFFFF; font-weight:bold; }
+
+/*Main page title "Keep track of your".*/
+span.mtitle	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:14pt; color:#FFFFFF; font-weight:normal; }
+
+
+/*Introduction box*/
+span.intro	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt;
+		  color:#FFFFFF; }
+
+/*Nick name coloring in Introduction box*/
+span.nick	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; color:#CBE1FF; }	/*same as span.blue*/
+
+
+/*---TABLE, TD Classes - Text---*/
+/*table.border	{ background-color:#000000; border-width:1px; border-color:#000000; border-style:solid; }*/
+table.border	{ border-width:0px;  background-color:#243954;border-style:solid; }
+/*table.border	{ background-color:#243954; border-width:1px; border-color:#58677C; border-style:solid; }*/
+
+/*Table title style (used)*/
+td.ttitle	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif;
+		  font-size:12pt; font-weight:bold; color:#FFFFFF; background-color:#58677C;
+                  vertical-align:bottom; text-align:left; }	/*background-image:url(./pics/metalw.gif);*/
+
+/*Table info text style (used)*/
+td.ttext	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif;
+		  font-size:8pt;  font-weight:normal; color:#FFFFFF; background-color:#6C6C6C;
+                  vertical-align:bottom; text-align:left; } /*###  #243954 #474747 org:#FFFFFF*/
+
+
+/*Quick index table, top left (used)*/
+td.index	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:8pt;
+		  color:#FFFFFF; line-height:11pt; }
+
+/*Intro text rounded box, top right*/
+td.intro	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt;
+		  color:#FFFFFF; }
+
+/*Intro text rounded box, top right for MAIN page, smaller font!*/
+td.intro_main	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:8pt;
+		  color:#FFFFFF; }
+
+/*Info "!" rounded box*/
+td.info		{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt;
+		  color:#FFFFFF; }
+
+/*(Advanced)Search tags (used)*/
+td.search	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt;
+		  font-weight:bold; color:#FFFFFF; }
+
+/*Standard info text, like span.text (used, e.g. by advanced search)*/
+td.text		{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:9pt;
+		  color:#FFFFFF; }
+
+/*---TD Classes - Text with background colors---*/
+
+/*NORMAL HEADER line in table with bg - 1st top description line*/
+td.nhbg		{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt;
+		  color:#CBE1FF; background-color:#58677C;  } /*light blue, background-image:url(./pics/metalw.gif);*/
+
+/*NORMAL TEXT with background, left most descriptive column*/
+td.ntbg		{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt;
+		  color:#FFFFFF; background-color:#58677C;  } /*background-image:url(./pics/metalw.gif);*/
+
+/*NORMAL ALTERNATING data with bg*/
+td.nabg		{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt;
+		  color:#FFFFFF; background-color:#474747; }
+
+/*NORMAL data text - transparent*/
+td.n		{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt;
+		  color:#FFFFFF; }
+
+/*SMALL HEADER line in table with bg - 1st top description line*/
+td.shbg		{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:8pt;
+		  color:#CBE1FF; background-color:#58677C;  }
+
+/*SMALL TEXT with background, left most descriptive column*/
+td.stbg		{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:8pt;
+		  color:#FFFFFF; background-color:#58677C;  }
+
+/*SMALL ALTERNATING data with bg*/
+td.sabg		{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:8pt;
+		  color:#FFFFFF; background-color:#474747; }
+
+/*SMALL data text - transparent*/
+td.s		{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:8pt;
+		  color:#FFFFFF; }
+
+td		{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt;
+		  color:#FFFFFF; }
+
+th		{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt;
+		  color:#FFFFFF; }
+
+
+/*Standard info text, like span.text (used, e.g. by advanced search)*/
+input.textbox	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:9pt;
+					color:#000000; background-color:#9CABC0; border-width:1px; }
+
+/*Standard info text, like span.text (used, e.g. by advanced search)*/
+input.button	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:9pt;
+					color:#000000; background-color:#9CABC0; border-width:1px;
+				}
+
+select			{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt;
+					color:#000000; background-color:#9CABC0; border: 1px solid black; }
+
+select.mini		{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:8pt;
+					color:#000000; background-color:#9CABC0; }
+
+
+
+/*--OLD STUFF BELOW------------------------------------------------------------------------------------*/
+
+/*---Span classes - Color---*/
+
+/*Secondary 'marking' color, used in all tables, and also on the templates */
+span.red	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; color:#6699CC; }		/*blue ,darker orange CC9933*/
+
+/*Secondary 'marking' color, used in all tables, and also on the templates */
+span.wight	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; color:#000000; }
+
+
+/*Navigation bar - color of link we reached, then only a text*/
+span.gray	{ font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; color:#3C3C3C; }
+
+/*Colored text - Intensity range blue to red, same as the 'td.0' to 'td.9' intensity range*/
+span.i0		{ color:#FF0101; } /*red	*/
+span.i1		{ color:#FF7901; } /*organge	*/
+span.i2		{ color:#FFB401; } /*lorange	*/
+span.i3		{ color:#FFF001; } /*yellow	*/
+span.i4		{ color:#D2FF01; } /*ygreen	*/
+span.i5		{ color:#96FF01; } /*lgreen	*/
+span.i6		{ color:#01FF5B; } /*dgreen	*/
+span.i7		{ color:#01FFD2; } /*lblueg	*/
+span.i8		{ color:#01B4FF; } /*lblue	*/
+span.i9		{ color:#013DFF; } /*dblue	*/
+
+
+
+/*---Special----*/
+/*Typewriter font - used in templates to denote files names, and paths, uses span.blue color*/
+tt		{ font-family:Courier New,Courier,mono; color:#FFCC66; font-size:10pt; }
+
+/*Blockquote used for intro, faq and help page templates*/
+blockquote.text { font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt; }
+
+
+
+
+
+/*---TABLE Classes---*/
+/*table.border	{ border-width:1px; border-color:#CCCCFF; border-style:solid } */ /*index table*/
+/*table.border2	{ border-width:1px; border-color:#336699; border-style:solid } */ /*6699CC info tables*/
+
+
+/*Color spectrum for td backgrounds (e.g. player numbers, or Weapons), used in all tables*/
+td.s0	{ background-color:#ea0000; } /*red	*/
+td.s1	{ background-color:#ea8100; } /*organge	*/
+td.s2	{ background-color:#d9ca00; } /*yellow	*/
+td.s3	{ background-color:#58ea00; } /*litegreen*/
+td.s4	{ background-color:#00d000; } /*green	*/
+td.s5	{ background-color:#00eaa4; } /*olive	*/
+td.s6	{ background-color:#00b6ea; } /*liteblue*/
+td.s7	{ background-color:#003aea; } /*blue	*/
+td.s8	{ background-color:#c700ea; } /*purple	*/
+td.s9	{ background-color:#ea0093; } /*pink	*/
+
+/*s10 is not part of any loop - extra 11th "color"
+       gray, extra color used for suis in pl weapon usage table*/
+td.s10	{ background-color:#7b7c6e; }
+
+/*Intensity range blue to red, used in all tables*/
+td.i0	{ background-color:#FF0101; } /*red	*/
+td.i1	{ background-color:#FF7901; } /*organge	*/
+td.i2	{ background-color:#FFB401; } /*lorange	*/
+td.i3	{ background-color:#FFF001; } /*yellow	*/
+td.i4	{ background-color:#D2FF01; } /*ygreen	*/
+td.i5	{ background-color:#96FF01; } /*lgreen	*/
+td.i6	{ background-color:#01FF5B; } /*dgreen	*/
+td.i7	{ background-color:#01FFD2; } /*lblueg	*/
+td.i8	{ background-color:#01B4FF; } /*lblue	*/
+td.i9	{ background-color:#013DFF; } /*dblue	*/

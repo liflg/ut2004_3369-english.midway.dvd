@@ -1,0 +1,13 @@
+[Setup]
+LocalProduct="Unreal Tournament 2004"
+ReadMe=Help\ReadMePatch.int.txt
+SetupWindowTitle=Unreal Tournament 2004 Patch Setup
+ProductURL=http://www.unrealtournament.com/
+VersionURL=http://www.unrealtournament.com/
+Developer="Epic Games"
+DeveloperURL=http://www.epicgames.com/
+Logo=Help\InstallerLogo2004.bmp
+License=License.int
+
+[UT2003Requirement]
+LocalProduct=UT2004

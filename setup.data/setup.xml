@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<install
+    product="ut2004"
+    desc="Unreal Tournament 2004"
+    version="3369-german.midway.dvd"
+    category="Game"
+    promptbinaries="yes"
+    express="no"
+    superuser="no"
+    reinstall="no"
+    reinstallnowarning="yes"
+    nopromptoverwrite="yes"
+    reinstallfast="yes"
+    splashpos="top"
+    nomenuitems="no"
+    cdkey="System/cdkey"
+>
+
+  <require command="sh setup.data/tmp_check.sh 6000">
+	 There is not enough free diskspace in your TMPDIR 
+  	 You need about: 6000 MB
+  	 Try: export TMPDIR=/where/you/have/alot/of/freespace
+  </require>
+  
+  <cdrom id="disc1" name="Unreal Tournament 2004 Install">AutoRunData/Midway.tga</cdrom>
+  
+  <eula ignoreonreinstall="yes">EULA.txt</eula>
+
+  <readme>
+    README.liflg
+  </readme>
+
+  <option install="true" required="true" size="5800M">
+    Base Install
+
+    <binary arch="any" libc="any" binpath="bin/" symlink="ut2004" icon="ut2004.xpm" name="Unreal Tournament 2004" desc="Unreal Tournament">
+     ut2004
+    </binary>
+
+ 	<files cdromid="disc1" srcpath="AutoRunData" path="Help">
+	 Unreal.ico
+	</files>
+
+	<script cdromid="disc1">
+	 sh setup.data/install-disc1.sh
+	</script>
+
+	<files srcpath="data/All_Animations" path="Animations">
+	 *
+	</files>
+		 
+	<files srcpath="data/All_Benchmark" path="Benchmark">
+	 *
+	</files>
+
+	<files srcpath="data/All_ForceFeedback" path="ForceFeedback">
+	 *
+	</files>
+
+	<files srcpath="data/All_KarmaData" path="KarmaData">
+	 *
+	</files>
+
+	<files srcpath="data/All_Maps" path="Maps">
+	 *
+	</files>
+
+	<files srcpath="data/All_Music" path="Music">
+	 *
+	</files>
+
+	<files srcpath="data/English_Sounds_Speech_System_Help/Sounds" path="Sounds">
+	 *
+	</files>
+
+	<files srcpath="data/English_Sounds_Speech_System_Help/System" path="System">
+	 *.int
+	 *.det
+	 *.u
+	 *.frt
+	 *.est
+	 *.itt
+	 *.kot
+	 *.md5
+	 *.ini
+	 *.ucl
+	 *.upl
+	 *.url
+	 *.dat
+	 editorres
+	</files>
+
+	<files srcpath="data/All_StaticMeshes" path="StaticMeshes">
+	 *
+	</files>
+
+	<files srcpath="data/All_Textures" path="Textures">
+	 *
+	</files>
+
+	<files srcpath="data/All_Help" path="Help">
+	 *
+	</files>
+
+
+	<files srcpath="data/All_Web" path="Web">
+	 *
+	</files>
+
+		<files srcpath="patch">
+		 Animations
+		 Help
+		 Speech
+		 System
+		 Textures
+		 Web
+		</files>
+
+   <files arch="x86">
+      linux-x86.tar.gz
+    </files>
+
+    <files arch="amd64">
+      linux-amd64.tar.gz
+    </files>
+
+    <files arch="x86_64">
+      linux-amd64.tar.gz
+    </files>
+
+<files>
+ut2004.xpm
+</files>
+  </option>
+</install>
